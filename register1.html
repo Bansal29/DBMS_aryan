@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIGN UP FORM</title>
+  <link rel="stylesheet" href="register1.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <script src="https://kit.fontawesome.com/1a2a12610c.js" crossorigin="anonymous"></script>
+  <script src="validation.js" defer></script>
+</head>
+
+<body>
+  <div class="menu">
+    <span><a href="about.html">About</a></span>
+    <span><a href="home.html">Home</a></span>
+    <span><a href="register.html">Customer Care</a></span>
+    <span><a href="register.html">My Profile</a></span>
+    <span><a href="index.html">Login</a></span>
+  </div>
+  <!-- partial:index.partial.html -->
+  <div class="login-box">
+    <a href="home.html" class="test"><img background:#ff0 src="pharm.png" /></a>
+    <h2>SIGN UP FORM</h2>
+    <form onsubmit="return validate()">
+      <div class="user-box">
+        <label>Fullname</label>
+        <input type="text" name="" required />
+        <!-- <label>Fullname</label> -->
+      </div>
+      <div class="user-box">
+        <label>Age</label>
+        <input type="text" name="" required />
+        <!-- <label>Age</label> -->
+      </div>
+      <div class="user-box">
+        <label>Phone number</label>
+        <input type="text" name="" required />
+        <!-- <label>Phone number</label> -->
+      </div>
+      <div class="user-box">
+        <label>Email Id</label>
+        <input type="text" name="" required />
+        <!-- <label>Email Id</label> -->
+      </div>
+      <div class="user-gender">
+        <label>Gender:</label>
+        <input type="radio" id="ch1" name="gender" required="" />
+        <label>Male</label>
+        <input type="radio" id="ch2" name="gender" required="" />
+        <label>Female</label>
+        <input type="radio" id="ch3" name="gender" required="" />
+        <label>Other</label>
+      </div>
+      <div class="Type_stud">
+        <label for="stud">Type :</label>
+        <select name="type_user" id="stud">
+          <option value="College student">College Student</option>
+          <option value="Working Professional">Working Professional</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+      <div class="user-box">
+        <label>Country</label>
+        <input type="text" name="" required="" />
+      </div>
+      <div class="user-box">
+        <label>State</label>
+        <input type="text" name="" required="" />
+      </div>
+      <div class="user-box">
+        <label>City</label>
+        <input type="text" name="" required="" />
+      </div>
+      <div class="user-box">
+        <label>Used_id</label>
+        <input type="text" name="" required="" />
+      </div>
+      <div class="user-box">
+        <label>Password</label>
+        <input type="text" id="password" />
+      </div>
+      <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+      <a href="register.html">
+        SUBMIT
+      </a>
+    </form>
+</body>
+
+</html>

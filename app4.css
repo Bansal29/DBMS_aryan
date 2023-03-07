@@ -1,0 +1,78 @@
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 20%;
+  margin-top: 20px;
+  margin-left: 20px;
+  /* border-radius: 80px; */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 16px 16px 16px 0 rgba(0, 0, 0, 0.2);
+  border-bottom: 5px solid black;
+  cursor: pointer;
+  transform: translate(-42px, -18px);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+.checked {
+  color: orange;
+}
+.staring {
+  padding-left: 16px;
+}
+.menu {
+  background: black;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+.menu span {
+  padding: 10px;
+}
+.menu a {
+  text-decoration: none;
+  color: aqua;
+}
+.menu a:hover {
+  border-bottom: 2px solid aqua;
+}
+.menu {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+html {
+  height: 100%;
+}
+.content {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+h2 {
+  text-align: center;
+}
+.bor {
+  width: 50%;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  margin-left: 25%;
+  box-shadow: 16px 16px 16px 0 rgba(0, 0, 0, 0.2);
+}
+body {
+  width: 100%;
+  height: 100%;
+  /* background-color: peachpuff; */
+  /* background: linear-gradient(green, white); */
+  /* background: linear-gradient(84.97deg, #ae67fa 1.84%, #f49867 79.67%); */
+}

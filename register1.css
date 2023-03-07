@@ -1,0 +1,277 @@
+html {
+  height: 200%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(pink, blue);
+}
+
+.menu {
+  background: black;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  border: 2px solid black;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.menu span {
+  padding: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: aqua;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid aqua;
+}
+
+.menu {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin-top: 300px;
+  /* overflow: hidden; */
+}
+
+.login-box h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  margin: 0 0 30px;
+  padding: 0;
+  color: #03e9f4;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  color: #fff;
+}
+
+.login-box form a {
+  margin-left: 40%;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+  border-radius: 5px;
+  border: 2px solid aqua;
+}
+
+.login-box a:hover {
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 10%;
+  opacity: 1;
+}
+
+.question {
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0px 0px;
+  color: #03e9f4;
+  font-size: 0em;
+  text-decoration: none;
+  text-transform: lowercase;
+  transition: none;
+  letter-spacing: 4px;
+}
+
+.question a:hover {
+  background: none;
+  color: #fff;
+  border-radius: none;
+  box-shadow: none;
+}
+
+.forgot {
+  color: #03e9f4;
+  text-decoration-line: none;
+}
+
+.box {
+  color: #03e9f4;
+  display: inline;
+}
+
+.page {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+i {
+  color: #fff;
+  float: right;
+}
+
+.second {
+  color: white;
+  text-align: center;
+  margin-top: 14px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 410px) {
+  .login-box {
+    width: 100%;
+    height: max-content;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 320px) {
+  .login-box {
+    width: 100%;
+    height: max-content;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .login-box {
+    width: 100%;
+    height: max-content;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .login-box {
+    width: 100%;
+    height: max-content;
+  }
+}
+
+.login-box h2 a {
+  text-decoration: none;
+  color: #03e9f4;
+}
+
+.login-box h2 a:hover {
+  background: none;
+  color: #03e9f4;
+  border-radius: none;
+  box-shadow: none;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+.user-gender {
+  color: aliceblue;
+  margin-bottom: 25px;
+}
+
+.Type_stud {
+  color: aliceblue;
+  margin-bottom: 25px;
+}
+
+.Domain {
+  color: aliceblue;
+  margin-bottom: 25px;
+}
+
+.try {
+  display: inline;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Password validation */
+
+/* message box is shown when the user clicks on password */
+#message {
+  display: none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
